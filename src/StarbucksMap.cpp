@@ -3,8 +3,11 @@
 #include <fstream>
 #include <stdlib.h>
 #include <algorithm>
+#include "cinder/app/AppBasic.h"
 
 using namespace std;
+using namespace ci;
+using namespace ci::app;
 
 
 bool operator==(const Store& S1, const Store& S2) {
@@ -21,8 +24,11 @@ double dist(const Store& S1, const Store& S2) {
 
 StarbucksMap::StarbucksMap() {
   ifstream inFile("Starbucks.csv");
+  //commented code here because having difficulty opening Starbucks.csv
+  inFile.open("../resources/Starbucks.csv");//adding this line makes it work! :D
   if(!inFile){
-    std::cout << "Error opening Starbucks.csv file" << endl;
+	  //std::cout << "Error opening Starbucks.csv file" << endl;
+    console() << "Error opening Starbucks.csv file" << endl;
     exit(0);
   }
 
