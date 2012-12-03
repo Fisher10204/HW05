@@ -17,7 +17,10 @@
 #include <iostream>
 #include <assert.h>
 #include <algorithm>
+#include "cinder/app/AppBasic.h"
 
+using namespace ci;
+using namespace ci::app;
 using namespace std;
 
 int randInt(int a, int b) {
@@ -263,11 +266,11 @@ bool Tester::run_test(int i) {
 
 void Tester::test_all() {
   if (matrix_graph)
-    cout << "Matrix Graph:";
+    console() << "Matrix Graph:";
   else
-    cout << "List Graph:";
-  cout << endl;
+    console() << "List Graph:";
+  console() << endl;
 
   for (int i=1; i <= 12; i++)
-    cout << "Test " << i << ": " << (run_test(i) ? "Working" : "Failed") << endl;
+    console() << "Test " << i << ": " << (run_test(i) ? "Working" : "Failed") << endl;
 }
