@@ -106,6 +106,7 @@
   <ItemGroup>
     <ClCompile Include="..\src\Controller.cpp" />
     <ClCompile Include="..\src\HW05App.cpp" />
+    <ClCompile Include="..\src\MatrixGraph.cpp" />
     <ClCompile Include="..\src\StarbucksMap.cpp" />
     <ClCompile Include="..\src\Tester.cpp" />
     <ClCompile Include="ListGraph.cpp" />
@@ -121,6 +122,9 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\Desktop\materials.d\Starbucks.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
