@@ -24,9 +24,6 @@
     <ClCompile Include="..\src\Tester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\Controller.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ListGraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

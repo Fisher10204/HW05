@@ -104,7 +104,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\Controller.cpp" />
     <ClCompile Include="..\src\GraphAlgs.cpp" />
     <ClCompile Include="..\src\HW05App.cpp" />
     <ClCompile Include="..\src\MatrixGraph.cpp" />
